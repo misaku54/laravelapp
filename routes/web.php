@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 
 // 任意パラメータ
-Route::get('hello', 'App\Http\Controllers\HelloController');
+Route::get('hello', 'App\Http\Controllers\HelloController@index');
