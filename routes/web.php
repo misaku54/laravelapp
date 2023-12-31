@@ -17,4 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('hello', 'App\Http\Controllers\HelloController@index');
+// 任意パラメータ
+Route::get('hello/{id?}/{pass?}', 'App\Http\Controllers\HelloController@index');
