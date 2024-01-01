@@ -17,5 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// 任意パラメータ
-Route::get('hello', 'App\Http\Controllers\HelloController@index');
+Route::get('hello', function() {
+    return view('hello.index');
+});
