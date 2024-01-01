@@ -14,7 +14,6 @@
     @else
     <p>何か書いてください。</p>
     @endif
-    <p>{{$msg}}</p>
     <form method="POST" action="/hello">
         @csrf
         <input type="text" name="msg">
