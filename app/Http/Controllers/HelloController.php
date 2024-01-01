@@ -7,7 +7,7 @@ use Illuminate\Http\Response;
 
 class HelloController extends Controller
 {
-    public function index(Request, $request) 
+    public function index(Request $request) 
     {
         $data = [
             'msg'=>'これはコントローラーから渡されたメッセージ',
